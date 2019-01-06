@@ -1,0 +1,47 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	cout << "Hello" <<endl;
+	cout <<"Please enter an int." <<endl;
+	int num1;
+	cin >> num1;
+	cout << "The number you entered was: ";
+	cout << num1 <<endl;
+	
+	cout <<"Please enter another int." <<endl;
+	int num2; 
+	cin >> num2;
+	cout <<"The second number you entered was: ";
+	cout << num2 <<endl;
+	
+	cout <<"What would you like to do?" <<endl;
+	cout <<"a. add" <<endl;
+	cout <<"b. subtract" <<endl;
+	cout <<"c. multiply" <<endl;
+	cout <<"d. divide" <<endl;
+	cout <<"please enter a, b, c, or d." <<endl;
+	char choice;
+	cin >> choice;
+	
+	if(num1 != 0 && num2 != 0){
+		if(choice =='a'){
+			cout << num1+num2;
+		}
+		else if(choice =='b'){
+			cout << num1-num2;
+		}
+		else if(choice == 'c'){
+			cout << num1*num2;
+		}
+		else if(choice == 'd'){
+			cout << num1/num2;
+		}
+	}
+	
+	else{
+		cout <<"There was an error";
+	}
+	
+	return 0;
+}
